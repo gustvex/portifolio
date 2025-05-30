@@ -5,6 +5,7 @@ import { defineConfig } from "vite"
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/", // Importante para Netlify ou qualquer hospedagem pública
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
