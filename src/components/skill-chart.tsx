@@ -58,8 +58,8 @@ export function SkillChart({ name, proeficiencia, total, icon }: SkillChartProps
                                     if (viewBox && "cx" in viewBox && "cy" in viewBox) {
                                         return (
                                             <foreignObject
-                                                x={viewBox.cx - 20}
-                                                y={viewBox.cy - 20}
+                                                x={(viewBox?.cx ?? 0) - 20}
+                                            y={(viewBox?.cy ?? 0) - 20}
                                                 width={40}
                                                 height={40}
                                             >
