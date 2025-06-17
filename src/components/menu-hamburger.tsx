@@ -26,7 +26,6 @@ const menuItems: MenuItem[] = navLinks.map((item) => ({
   href: item.path,
 }));
 
-// Passa a função onClick para fechar o menu quando clicar
 const MenuItemComponent: React.FC<{ item: MenuItem; onClick: () => void }> = ({
   item,
   onClick,
@@ -62,7 +61,7 @@ export default function HamburgerMenu({ className }: HamburgerMenuProps) {
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-[240px] sm:w-[300px]">
-        <nav className="flex flex-col p-4">
+        <nav className="flex flex-col p-6">
           {menuItems.map((item) => (
             <MenuItemComponent key={item.title} item={item} onClick={handleClose} />
           ))}
