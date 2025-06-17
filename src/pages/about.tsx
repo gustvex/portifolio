@@ -15,11 +15,11 @@ export default function About() {
     useEffect(() => {
         AOS.init({
             duration: 800,
-            once: false, // animação repete toda vez que o elemento entra na viewport
+            once: false, 
         });
     }, []);
     return (
-        <section id="about" className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <section id="about" style={{ scrollMarginTop: "100px" }} className="grid grid-cols-1 md:grid-cols-2 items-center ">
             <div className="space-y-6" data-aos="fade-up">
                 <section data-aos="fade-right" data-aos-delay="100">
                     <h1 className="titulo">Olá, eu sou Gustavo</h1>

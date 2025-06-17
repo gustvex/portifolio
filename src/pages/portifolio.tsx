@@ -33,7 +33,12 @@ export default function Portifolio() {
     }, [filteredItems]);
 
     return (
-        <section id="portfolio" className="max-w-6xl mx-auto p-8 space-y-10" data-aos="fade-up">
+        <section
+            id="portfolio"
+            className="max-w-6xl mx-auto p-8 space-y-10 relative"
+            style={{ scrollMarginTop: "100px" }} 
+            data-aos="fade-up"
+      >
             <div className="text-center space-y-4" data-aos="fade-down" data-aos-delay="100">
                 <h2 className="text-3xl font-bold text-foreground">Portfólio</h2>
 

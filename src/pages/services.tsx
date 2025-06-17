@@ -19,7 +19,8 @@ export default function Service() {
         });
     }, []);
     return (
-        <section id="services" className="space-y-6" data-aos="fade-up">
+        <section id="services" style={{ scrollMarginTop: "100px" }} className="max-w-6xl mx-auto p-8 space-y-10" data-aos="fade-up">
+
             <div className="text-center space-y-2" data-aos="fade-down" data-aos-delay="100">
                 <h2 className="text-3xl font-bold text-foreground">Serviços</h2>
                 <p className="text-muted-foreground">
