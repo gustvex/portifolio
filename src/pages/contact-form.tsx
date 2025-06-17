@@ -37,7 +37,6 @@ export default function ContactForm() {
 
             <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* Coluna 1 */}
                     <div className="space-y-4">
                         <Input
                             type="text"
@@ -65,7 +64,6 @@ export default function ContactForm() {
                         />
                     </div>
 
-                    {/* Coluna 2 */}
                     <div className="space-y-4">
                         <Textarea
                             name="message"
@@ -76,12 +74,11 @@ export default function ContactForm() {
                             required
                         />
 
-                        <div className="flex justify-end">
+                        <div className="flex justify-start md:justify-end">
                             <Button type="submit">
                                 Enviar mensagem
                             </Button>
                         </div>
-                        
                     </div>
                 </div>
 

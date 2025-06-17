@@ -27,9 +27,8 @@ export default function Portifolio() {
     useEffect(() => {
         AOS.init({
             duration: 800,
-            once: false, // anima toda vez que entra na viewport
+            once: false,
         });
-        // Se quiser garantir que o AOS reconheça a mudança de itens filtrados:
         AOS.refresh();
     }, [filteredItems]);
 
@@ -38,7 +37,7 @@ export default function Portifolio() {
             <div className="text-center space-y-4" data-aos="fade-down" data-aos-delay="100">
                 <h2 className="text-3xl font-bold text-foreground">Portfólio</h2>
 
-                <div className="flex justify-center gap-10 p-4">
+                <div className="flex flex-wrap justify-center flex- gap-10 p-4">
                     {categories.map((category) => (
                         <Button
                             className="cursor-pointer"

@@ -1,9 +1,14 @@
+
 import { navLinks } from "@/lib/nav-links";
+import { cn } from "@/lib/utils";
 
-export default function NavBar() {
+type BarMenuProps = {
+    className?: string;
+};
+
+export default function BarMenu({ className }: BarMenuProps) {
     return (
-
-        <div className="space-x-20 text-sm font-medium cursor-pointer">
+        <div className={cn("space-x-20 text-sm font-medium cursor-pointer", className)}>
             {navLinks.map(({ label, path }) => (
                 <a
                     key={path}
@@ -14,6 +19,5 @@ export default function NavBar() {
                 </a>
             ))}
         </div>
-
     );
 }

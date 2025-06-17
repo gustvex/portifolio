@@ -1,4 +1,3 @@
-// src/data/navLinks.ts
 export const navLinks = [
     { label: "Sobre", path: "#about" },
     { label: "Services", path: "#services" },
@@ -6,7 +5,6 @@ export const navLinks = [
     { label: "Portfólio", path: "#portfolio" },
 ];
   
-
 export const statsData = [
     { value: '+3', label: 'Anos de Experiência' },
     { value: '+5', label: 'Projetos Desenvolvidos' },
