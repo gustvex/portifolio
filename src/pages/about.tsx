@@ -9,7 +9,6 @@ import logo from "@/assets/logo.jpeg";
 import { statsData } from "@/lib/nav-links";
 import SocialIcons from "@/components/social-icons";
 import StatsCards from "@/components/stats-cards ";
-import { HoverScaleWrapper } from "@/components/hover-scale";
 
 
 export default function About() {
