@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 
 import { SkillChart } from "@/components/skill-chart";
@@ -16,21 +15,13 @@ export default function Skills() {
         { name: "React", proeficiencia: 99, icon: <FontAwesomeIcon icon={faReact} size={'3x'} /> },
     ];
 
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-            once: false,
-        });
-    }, []);
-
     return (
         <section
             id="skills"
             style={{ scrollMarginTop: "100px" }}
             className="max-w-6xl mx-auto p-8 space-y-10"
-            data-aos="fade-up"
         >
-            <div className="text-center space-y-2" data-aos="fade-down" data-aos-delay="100">
+            <div className="text-center space-y-2">
                 <h2 className="text-3xl font-bold text-foreground">Skills</h2>
                 <p className="text-muted-foreground">
                     Conheça um pouco das minhas habilidades como desenvolvedor
@@ -45,8 +36,6 @@ export default function Skills() {
                     <HoverScaleWrapper key={index} className="rounded-xl m-10">
                         <div
                             className="flex justify-center w-[200px]"
-                            data-aos="fade-up"
-                            data-aos-delay={150 + index * 100}
                         >
                             <SkillChart
                                 name={skill.name}

@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import AOS from "aos";
+import { useState } from "react";
 import "aos/dist/aos.css";
 
 import { Button } from "@/components/ui/button";
@@ -24,22 +23,14 @@ export default function Portifolio() {
             ? items
             : items.filter((item) => item.category === activeCategory);
 
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-            once: false,
-        });
-        AOS.refresh();
-    }, [filteredItems]);
-
     return (
         <section
             id="portfolio"
             className="max-w-6xl mx-auto p-8 space-y-10 relative"
             style={{ scrollMarginTop: "100px" }} 
-            data-aos="fade-up"
+       
       >
-            <div className="text-center space-y-4" data-aos="fade-down" data-aos-delay="100">
+            <div className="text-center space-y-4">
                 <h2 className="text-3xl font-bold text-foreground">Portfólio</h2>
 
                 <div className="flex flex-wrap justify-center flex- gap-10 p-4">
@@ -49,8 +40,6 @@ export default function Portifolio() {
                             key={category}
                             variant={activeCategory === category ? "default" : "outline"}
                             onClick={() => setActiveCategory(category)}
-                            data-aos="fade-up"
-                            data-aos-delay="150"
                         >
                             {category}
                         </Button>
@@ -63,8 +52,6 @@ export default function Portifolio() {
                     <HoverScaleWrapper>
                         <div
                             key={index}
-                            data-aos="fade-up"
-                            data-aos-delay={150 + index * 100}
                         >
                             <PortfolioItem title={item.title} category={item.category} />
                         </div>

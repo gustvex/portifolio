@@ -8,28 +8,26 @@ export default function Footer() {
                 <div className="flex justify-center gap-6">
                     <SocialIcons />
                 </div>
-                <div className="flex justify-center items-center gap-6 text-sm text-muted-foreground">
-                    <div className="flex justify-center items-center gap-6 text-sm text-muted-foreground">
-                        <div className="flex items-center gap-2">
-                            <Mail className="w-4 h-4" />
-                            <a
-                                href="mailto:gustavooliveiraworks@gmail.com"
-                                className="hover:underline"
-                            >
-                                gustavooliveiraworks@gmail.com
-                            </a>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <Phone className="w-4 h-4" />
-                            <a
-                                href="tel:+5565992740985"
-                                className="hover:underline"
-                            >
-                                (65) 99274-0985
-                            </a>
-                        </div>
-                    </div>
 
+                <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-2">
+                        <Mail className="w-4 h-4" />
+                        <a
+                            href="mailto:gustavooliveiraworks@gmail.com"
+                            className="hover:underline"
+                        >
+                            gustavooliveiraworks@gmail.com
+                        </a>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <Phone className="w-4 h-4" />
+                        <a
+                            href="tel:+5565992740985"
+                            className="hover:underline"
+                        >
+                            (65) 99274-0985
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
