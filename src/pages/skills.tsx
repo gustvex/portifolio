@@ -40,9 +40,9 @@ export default function Skills() {
                 </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-wrap justify-center ">
                 {skills.map((skill, index) => (
-                    <HoverScaleWrapper key={index}>
+                    <HoverScaleWrapper key={index} className="rounded-xl m-10">
                         <div
                             className="flex justify-center w-[200px]"
                             data-aos="fade-up"

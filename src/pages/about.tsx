@@ -9,6 +9,7 @@ import logo from "@/assets/logo.jpeg";
 import { statsData } from "@/lib/nav-links";
 import SocialIcons from "@/components/social-icons";
 import StatsCards from "@/components/stats-cards ";
+import { HoverScaleWrapper } from "@/components/hover-scale";
 
 
 export default function About() {
@@ -39,10 +40,16 @@ export default function About() {
                     <SocialIcons />
                 </div>
 
-                <section className="flex space-x-4" data-aos="fade-up" data-aos-delay="400">
+
+
+                <section className="flex space-x-4 rounded-md" data-aos="fade-right" data-aos-delay="300">
+
+
                     <Link to="#portfolio">
                         <Button variant="default">Ver Projetos</Button>
                     </Link>
+
+
                     <a href="https://wa.me/5565992740985"
                         target="_blank"
                         rel="noopener noreferrer">

@@ -12,22 +12,22 @@ interface StatsCardsProps {
 
 export default function StatsCards({ stats }: StatsCardsProps) {
     return (
-        <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center mt-8 cursor-pointer">
-            {stats.map(({ value, label }, index) => (
-                <HoverScaleWrapper>
+        <section
+        className="flex flex-wrap justify-center md:justify-start gap-4 text-center mt-8 cursor-pointer"
 
-                    <Card
-                        key={index}
-                        className="p-4"
-
-                    >
-                        <CardContent>
-                            <p className="text-3xl font-bold text-primary">{value}</p>
-                            <p className="text-sm text-muted-foreground">{label}</p>
-                        </CardContent>
-                    </Card>
-                </HoverScaleWrapper>
-            ))}
-        </section>
+       
+      >
+        {stats.map(({ value, label }, index) => (
+          <HoverScaleWrapper key={index} className="rounded-xl">
+            <Card className="w-[150px] h-[120px]">
+              <CardContent className="flex flex-col items-center justify-center h-full">
+                <p className="text-3xl font-bold text-primary">{value}</p>
+                <p className="text-sm text-muted-foreground">{label}</p>
+              </CardContent>
+            </Card>
+          </HoverScaleWrapper>
+        ))}
+      </section>
+      
     );
 }

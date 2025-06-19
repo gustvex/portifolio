@@ -49,7 +49,7 @@ function Button({
   const Comp = asChild ? Slot : "button"
 
   return (
-    <HoverScaleWrapper>
+    <HoverScaleWrapper className="rounded-md">
       <Comp
         data-slot="button"
         className={cn(buttonVariants({ variant, size, className }))}

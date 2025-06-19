@@ -26,11 +26,11 @@ export default function SocialIcons() {
     return (
         <section className="flex space-x-6">
             {socialLinks.map(({ href, label, Icon }) => (
-                 <HoverScaleWrapper>
+                <HoverScaleWrapper className="rounded-full">
 
                 <div
                     key={label}
-                    className="text-foreground bg-muted/50 p-2 rounded-full inline-block"
+                    className="text-foreground p-2 rounded-full inline-block"
                 >
                     <a
                         href={href}

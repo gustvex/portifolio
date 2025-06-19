@@ -62,7 +62,7 @@ export default function Service() {
                     },
                 ]
                     .map(({ title, description },) => (
-                        <HoverScaleWrapper>
+                        <HoverScaleWrapper className="rounded-xl">
                             <Card className="h-full"
                                 key={title}>
                                 <CardHeader>
