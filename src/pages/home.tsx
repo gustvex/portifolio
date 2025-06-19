@@ -2,7 +2,7 @@ import Service from "./services";
 import About from "./about";
 import Skills from "./skills";
 import Portifolio from "./portifolio";
-import ContactForm from "./contact-form";
+// import ContactForm from "./contact-form";
 
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
             <Service />
             <Skills />
             <Portifolio />
-            <ContactForm />
+            {/* <ContactForm /> */}
         </main>
     );
 }

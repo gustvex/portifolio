@@ -10,20 +10,16 @@ type SocialLink = {
 
 const socialLinks: SocialLink[] = [
     {
-        href: "https://github.com/seuusuario",
+        href: "https://github.com/gustvex/",
         label: "GitHub",
         Icon: Github,
     },
     {
-        href: "https://linkedin.com/in/seuusuario",
+        href: "https://www.linkedin.com/in/gustavooliveiradevv/",
         label: "LinkedIn",
         Icon: Linkedin,
     },
-    {
-        href: "https://twitter.com/seuusuario",
-        label: "Twitter",
-        Icon: Twitter,
-    },
+   
 ];
 
 export default function SocialIcons() {

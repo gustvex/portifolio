@@ -28,55 +28,52 @@ export default function Service() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6   ">
                 {[
                     {
-                        title: "Desenvolvimento Frontend",
+                        title: "Desenvolvimento Front-End",
                         description:
-                            "Criação de interfaces modernas com React, Vue.js, Tailwind e Quasar Framework.",
+                            "Criação de interfaces modernas, responsivas e performáticas utilizando React, TypeScript, Tailwind, Vue.js e Quasar.",
                     },
                     {
-                        title: "Consumo de APIs",
+                        title: "Integração com APIs",
                         description:
-                            "Integração com APIs RESTful e GraphQL usando Axios, Fetch e ferramentas modernas.",
+                            "Consumo e integração de APIs REST, GraphQL e gRPC, garantindo comunicação eficiente, segura e escalável.",
                     },
                     {
                         title: "Performance & Acessibilidade",
                         description:
-                            "Sites rápidos, acessíveis e responsivos. Foco em Lighthouse e boas práticas.",
+                            "Desenvolvimento com foco em velocidade, usabilidade e acessibilidade, seguindo padrões do Lighthouse e das melhores práticas do mercado.",
                     },
                     {
                         title: "Design Responsivo",
                         description:
-                            "Desenvolvimento mobile-first com layouts que funcionam em qualquer dispositivo.",
+                            "Interfaces adaptáveis, pensadas no conceito mobile-first, que oferecem uma ótima experiência em qualquer dispositivo.",
                     },
                     {
-                        title: "Manutenção & Suporte",
+                        title: "Manutenção & Evolução",
                         description:
-                            "Atualizações, correções e suporte contínuo para manter seu projeto sempre em dia.",
+                            "Refatoração, implementação de melhorias, correções e suporte contínuo, mantendo seu projeto sempre atualizado e estável.",
                     },
                     {
-                        title: "Otimização SEO",
+                        title: "Otimização para SEO",
                         description:
-                            "Implementação de boas práticas para melhorar a visibilidade do seu site nos motores de busca.",
+                            "Aplicação de boas práticas de SEO técnico, melhorando a indexação, a visibilidade e o ranqueamento do seu site nos mecanismos de busca.",
                     },
-                ].map(({ title, description }, index) => (
-                    <HoverScaleWrapper>
-                        <Card
-                            key={title}
-                            className="hover:shadow-lg transition-shadow"
-                            data-aos="fade-up"
-                            data-aos-delay={150 + index * 100}
-                        >
-                            <CardHeader>
-                                <CardTitle>{title}</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <CardDescription>{description}</CardDescription>
-                            </CardContent>
-                        </Card>
-                    </HoverScaleWrapper>
-                ))}
+                ]
+                    .map(({ title, description },) => (
+                        <HoverScaleWrapper>
+                            <Card className="h-full"
+                                key={title}>
+                                <CardHeader>
+                                    <CardTitle>{title}</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <CardDescription>{description}</CardDescription>
+                                </CardContent>
+                            </Card>
+                        </HoverScaleWrapper>
+                    ))}
             </div>
         </section>
     );

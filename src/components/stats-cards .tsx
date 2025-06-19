@@ -19,6 +19,7 @@ export default function StatsCards({ stats }: StatsCardsProps) {
                     <Card
                         key={index}
                         className="p-4"
+
                     >
                         <CardContent>
                             <p className="text-3xl font-bold text-primary">{value}</p>
