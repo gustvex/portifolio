@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import { HoverScaleWrapper } from "./hover-scale";
 
 type SocialLink = {
