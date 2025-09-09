@@ -1,23 +1,20 @@
+import { HoverScaleWrapper } from "@/components/hover-scale";
 import { Card, CardContent } from "@/components/ui/card";
-import { HoverScaleWrapper } from "./hover-scale";
 
-interface Stat {
+type CardItem = {
     value: string;
     label: string;
 }
 
-interface StatsCardsProps {
-    stats: Stat[];
+interface CardProps {
+  cardData: CardItem[];
 }
 
-export default function StatsCards({ stats }: StatsCardsProps) {
+export default function Cards({ cardData }: CardProps) {
     return (
         <section
-        className="flex flex-wrap justify-center md:justify-start gap-4 text-center mt-8 cursor-pointer"
-
-       
-      >
-        {stats.map(({ value, label }, index) => (
+        className="flex flex-wrap justify-center xl:justify-start gap-6 text-center cursor-pointer">
+        {cardData.map(({ value, label }, index) => (
           <HoverScaleWrapper key={index} className="rounded-xl">
             <Card className="w-[150px] h-[120px]">
               <CardContent className="flex flex-col items-center justify-center h-full">
@@ -28,6 +25,5 @@ export default function StatsCards({ stats }: StatsCardsProps) {
           </HoverScaleWrapper>
         ))}
       </section>
-      
     );
 }

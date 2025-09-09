@@ -1,5 +1,5 @@
 import { Mail, Phone } from "lucide-react";
-import SocialIcons from "./social-icons";
+import SocialIcons from "../home/about/social-icons";
 
 export default function Footer() {
     return (

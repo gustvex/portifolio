@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import Layout from './layouts/layout'
+import Layout from './layout/layout'
 import Home from './pages/home'
 
 export default function AppRoutes() {

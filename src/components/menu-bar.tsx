@@ -1,5 +1,5 @@
 
-import { navLinks } from "@/lib/nav-links";
+import { navLinks } from "@/lib/mocks";
 import { cn } from "@/lib/utils";
 
 type BarMenuProps = {

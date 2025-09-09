@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/sheet";
 
 import { cn } from "@/lib/utils";
-import { navLinks } from "@/lib/nav-links";
+import { navLinks } from "@/lib/mocks";
 
 type HamburgerMenuProps = {
   className?: string;

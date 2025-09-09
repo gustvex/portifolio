@@ -1,6 +1,6 @@
 import React from "react";
 import { Github, Linkedin } from "lucide-react";
-import { HoverScaleWrapper } from "./hover-scale";
+import { HoverScaleWrapper } from "@/components/hover-scale";
 
 type SocialLink = {
     href: string;
@@ -24,7 +24,7 @@ const socialLinks: SocialLink[] = [
 
 export default function SocialIcons() {
     return (
-        <section className="flex space-x-6">
+        <section className="flex justify-center md:flex-row xl:justify-start gap-6">
             {socialLinks.map(({ href, label, Icon }) => (
                 <HoverScaleWrapper className="rounded-full">
 

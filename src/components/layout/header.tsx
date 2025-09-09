@@ -1,6 +1,6 @@
-import BarMenu from "./menu-bar";
-import HamburgerMenu from "./menu-hamburger";
-import { ModeToggle } from "./mode-toggle";
+import BarMenu from "../menu-bar";
+import HamburgerMenu from "../menu-hamburger";
+import { ModeToggle } from "../theme/mode-toggle";
 
 export default function Header() {
     return (
