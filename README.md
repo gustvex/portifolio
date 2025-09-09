@@ -14,33 +14,19 @@ O objetivo principal é apresentar minha trajetória como **Desenvolvedor Full S
 * **Projetos** → Galeria com meus principais trabalhos, incluindo descrições e links para repositórios ou versões em produção.
 * **Contato** → Informações para empresas ou desenvolvedores que desejem entrar em contato comigo.
 
----
+-----
 
-## Tecnologias Utilizadas
+### **Tecnologias Utilizadas**
 
-**Front-end**
+O projeto foi construído utilizando as seguintes ferramentas e bibliotecas:
 
-* React
-* TypeScript
-* Vue.js
-* Tailwind CSS
-* shadcn/ui
+  * **Frontend**: `Vite` com `React` e `TypeScript`.
+  * **Estilização**: `Tailwind CSS`, com componentes `shadcn/ui` para agilidade no desenvolvimento.
+  * **Rotas**: `React Router Dom` para navegação.
+  * **Requisições API**: `axios`.
+  * **Outras Bibliotecas**: `lucide-react`, `sonner`, entre outras.
 
-**Back-end**
-
-* Node.js
-* NestJS
-* PostgreSQL
-
-**Ferramentas & DevOps**
-
-* Docker
-* Nginx
-* Git
-* Vercel
-* Azure
-
----
+-----
 
 ## Como Rodar o Projeto
 
