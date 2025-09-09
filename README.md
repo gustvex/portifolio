@@ -36,14 +36,14 @@ Se você tiver o **Docker** instalado, pode rodar a aplicação em um contêiner
 
 ```bash
 # Clone o repositório
-git clone https://github.com/gustvex/gustvex.github.io
-cd gustvex.github.io
+git clone https://github.com/gustvex/portifolio.git
+cd portfolio
 
 # Construa a imagem Docker
-docker build -t portfolio-gustavo .
+docker build -t portfolio .
 
 # Execute o contêiner
-docker run -p 8080:80 portfolio-gustavo
+docker run -p 8080:80 portfolio
 ```
 
 Acesse em: **[http://localhost:8080](http://localhost:8080)**
