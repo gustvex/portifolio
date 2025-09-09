@@ -1,55 +1,58 @@
-# React + TypeScript + Vite
+Portfólio Pessoal - Gustavo Oliveira
+Visão Geral do Projeto
+Este projeto é o meu portfólio pessoal, desenvolvido como um espaço para expor meu trabalho, compartilhar minha experiência profissional e demonstrar minhas habilidades técnicas. O objetivo é apresentar uma visão geral de minha trajetória como desenvolvedor Full Stack, destacando projetos práticos e conhecimentos adquiridos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Funcionalidades
+Sobre Mim: Seção que apresenta uma visão geral da minha experiência e filosofia de trabalho como desenvolvedor.
 
-Currently, two official plugins are available:
+Especialidades: Detalhamento das minhas habilidades em desenvolvimento front-end e back-end, incluindo as principais tecnologias que utilizo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Projetos: Uma galeria dos meus projetos mais importantes, com descrições e links para os repositórios ou versões em produção.
 
-## Expanding the ESLint configuration
+Contato: Informações de contato para que empresas ou outros desenvolvedores possam se conectar comigo.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Tecnologias Utilizadas
+O portfólio foi construído utilizando as seguintes ferramentas e bibliotecas:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Front-end: React, TypeScript, Vue.js, Tailwind CSS, shadcn/ui.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Back-end: Node.js, NestJS, PostgreSQL.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Ferramentas e DevOps: Docker, Nginx, Git, Vercel, Azure.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# portifolio
+Como Rodar o Projeto
+Siga os passos abaixo para executar a aplicação em sua máquina local.
+
+1. Executando com Docker
+Se você tiver o Docker instalado, pode construir e rodar a aplicação em um contêiner, o que garante um ambiente isolado e padronizado.
+
+Clone o repositório:
+
+git clone [https://github.com/gustvex/gustvex.github.io](https://github.com/gustvex/gustvex.github.io)
+cd gustvex.github.io
+
+Construa a imagem do Docker:
+
+docker build -t portfolio-gustavo .
+
+Execute o contêiner:
+
+docker run -p 8080:80 portfolio-gustavo
+
+A aplicação estará disponível em http://localhost:8080.
+
+2. Executando Localmente
+Clone o repositório:
+
+git clone [https://github.com/gustvex/gustvex.github.io](https://github.com/gustvex/gustvex.github.io)
+cd gustvex.github.io
+
+Instale as dependências:
+
+npm install
+
+Inicie o servidor de desenvolvimento:
+
+npm run dev
+
+A aplicação estará disponível em http://localhost:5173.
